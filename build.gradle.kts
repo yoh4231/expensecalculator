@@ -1,7 +1,8 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id("com.android.application") version "8.5.2" apply false
-}
+    // Defines the Android Application plugin and its version for the whole project
+    id("com.android.application") version "8.12.3" apply false
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    // **FIX**: Defines the Kotlin Android plugin and its version for the whole project
+    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
 }
